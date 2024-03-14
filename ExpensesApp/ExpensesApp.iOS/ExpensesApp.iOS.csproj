@@ -66,6 +66,7 @@
     <Compile Include="CustomRenderer\CustomProgressBarRenderer.cs" />
     <Compile Include="CustomRenderer\CustomTextCellRenderer.cs" />
     <Compile Include="Dependencies\Share.cs" />
+    <Compile Include="Effects\SelectedEffect.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
@@ -160,4 +161,5 @@
   <ItemGroup>
     <BundleResource Include="Resources\expenses%403x.png" />
   </ItemGroup>
+  <ItemGroup />
 </Project>

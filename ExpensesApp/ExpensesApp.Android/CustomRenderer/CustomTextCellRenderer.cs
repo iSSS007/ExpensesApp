@@ -22,10 +22,10 @@ namespace ExpensesApp.Droid.CustomRenderer
             switch (item.StyleId)
                 {
                 case "none":
-                    cell.SetBackgroundColor(Android.Graphics.Color.Aqua);
+                    cell.SetBackgroundColor(Android.Graphics.Color.White);
                     break;
                 case "checkmark":
-                    cell.SetBackgroundColor(Android.Graphics.Color.Beige);
+                    cell.SetBackgroundColor(Android.Graphics.Color.WhiteSmoke);
                     break;
                 case "detail-button":
                     cell.SetBackgroundColor(Android.Graphics.Color.BlueViolet);

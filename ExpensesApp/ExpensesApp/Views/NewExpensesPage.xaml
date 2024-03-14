@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm ="clr-namespace:ExpensesApp.ViewModels"
+             xmlns:effect="clr-namespace:ExpensesApp.Effects"
              x:Class="ExpensesApp.Views.NewExpensesPage">
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -22,13 +23,21 @@
                         <ViewCell>
                             <StackLayout Orientation="Horizontal" Margin="16,0">
                                 <Label Text="Date:" VerticalOptions="Center" />
-                                <DatePicker Date="{Binding ExpenseDate,Mode=TwoWay}"/>
+                                <DatePicker Date="{Binding ExpenseDate,Mode=TwoWay}">
+                                    <DatePicker.Effects>
+                                        <effect:SelectedEffects/>
+                                    </DatePicker.Effects>
+                                </DatePicker>
                             </StackLayout>
                         </ViewCell>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal" Margin="16,0">
                                 <Label Text="Category:" VerticalOptions="Center" />
-                                <Picker SelectedItem="{Binding ExpenseCategory,Mode=TwoWay}" ItemsSource="{Binding Categories}" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                                <Picker SelectedItem="{Binding ExpenseCategory,Mode=TwoWay}" ItemsSource="{Binding Categories}" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                                    <Picker.Effects>
+                                        <effect:SelectedEffects/>
+                                    </Picker.Effects>
+                                </Picker>
                             </StackLayout>
                         </ViewCell>
                     </TableSection>
